@@ -1,4 +1,4 @@
-# convertisseur jupyternotebook vers html (sans le code python)
+# convertisseur jupyter notebook vers html (sans le code python)
 prérequis :<br>
 nbconvert<br>
 

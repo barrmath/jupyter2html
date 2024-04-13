@@ -1,4 +1,3 @@
-import nbformat
 from nbconvert import HTMLExporter
 from os import listdir
 from os import mkdir
@@ -13,10 +12,10 @@ except OSError as error:
     # print(error)
     pass
 
-# four chaque fichier notebook faire la convertion et envoyer la copie html vers le dossier html
+# pour chaque fichier notebook faire la convertion et envoyer la copie html vers le dossier html
 for file in all_file:
     if file.endswith('.ipynb'):
-        #faire la convertion avec un object
+        # faire la convertion avec un object
         htmlexport = HTMLExporter()
         htmlexport.exclude_input = True
         htmldata,ressource = htmlexport.from_file(file)

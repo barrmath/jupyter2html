@@ -24,7 +24,7 @@ for file in all_file:
         htmldata, ressource = htmlexport.from_file(file)
         notebook.append(file[:-6] + ".html")
         # write to output file
-        outputdata = "html/" + file[:-6] + ".html"
+        outputdata = "html/" + "'" +file[:-6] + ".html"
         with open(outputdata, "w") as f:
             f.write(htmldata)
 
